@@ -1,0 +1,123 @@
+<!--Etiqeutas semanticas para dar sentido al contenido de codigo html
+
+- Article/Section: Ambos se usan para "seccionar y agrupar contenido"
+- Header: Se encuentra en la parte superior de un documento (encabezado principal) y herramientas de navegacion y busqueda
+- Nav: Etiqueta de navegacion que puede contener enlaces de navegacion
+- Hgroup: Gupo de uno o mas subtitulos
+- Aside: Se encuentra en la parte superior y contiene navegacion y busqueda
+- Footer: Se encuentra en la parte inferior de un documento (contiene metainformacion)
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Semantico</title>
+  </head>
+
+  <body>
+    <header>
+      <!--Representa contenido introductorio-->
+      <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Banner-Xbox-Play-Anywhere?wid=834&hei=470&fit=crop" alt="xbox" width="200"/>
+      
+      <!--tag de navegacion-->
+      <nav>
+        <!--representa una sección de una página cuyo propósito es proporcionar enlaces de navegación-->
+        <a href="index.html">Home</a>
+        <a href="productos.html">Productos</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.htmñ">Contacto</a>
+      </nav>
+
+    </header>
+
+    <!--contenido principal de un documento <body>.-->
+    <main>
+      <!--Composición independiente en un documento-->
+      <article>
+        <h1>XBOX h1 art</h1>
+        <!--Representa una sección genérica e independiente de un documento-->
+        <section>
+          <h2>XBOX h2 sec</h2>
+          <p>
+            La aplicación Xbox para Windows es la que te permite jugar y
+            administrar contenido de los juegos para PC en tu dispositivo
+            Windows. Tanto si eres miembro de Xbox Game Pass como si compraste
+            títulos en Microsoft Store, los juegos te esperan en la aplicación.
+          </p>
+        </section>
+
+        <section>
+          <!--Representa una sección genérica e independiente de un documento-->
+          <h2>Juegos</h2>
+          <ul>
+            <li>Halo wars</li>
+            <li>Gears of wars</li>
+            <li>Need for spead</li>
+          </ul>
+        </section>
+      </article>
+
+      <article>
+        <!--Composición independiente en un documento-->
+        <h1>2do article</h1>
+        <form>
+          <!--representa una sección de documento que contiene "controles interactivos" para enviar información.-->
+          <div>
+            <!--contenedor genérico del contenido de flujo-->
+            <label for="nom">Nombre</label>
+            <input type="text" id="nom"/ placeholder="nombre">
+          </div>
+
+          <div>
+            <!--contenedor genérico del contenido de flujo-->
+            <label for="msn">Email</label>
+            <input type="email" id="msn" placeholder="correo"/>
+          </div>
+        </form>
+      </article>
+
+      <aside>
+        <!--representa una parte de un documento cuyo contenido solo se relaciona indirectamente con el contenido principal-->
+        <hgroup>
+          <!-- representa un encabezado y su contenido relacionado.-->
+          <h2>grupos de h 2</h2>
+          <h3>grupos de h 3</h3>
+        </hgroup>
+
+        <section>
+          <!--Representa una sección genérica e independiente de un documento-->
+          <ol>
+            <li>aside relacionado 1</li>
+            <li>aside relacionado 2</li>
+            <li>aside relacionado 3</li>
+          </ol>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      <!-- representa el pie de página de su antecesor más cercano, el contenido de la sección o el elemento raíz de la sección .-->
+      <img
+        src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Banner-Xbox-Play-Anywhere?wid=834&hei=470&fit=crop"
+        alt="xbox"
+        width="100"
+      />
+      <nav>
+        <!--representa una sección de una página cuyo propósito es proporcionar enlaces de navegación-->
+        <a href="index.html">Home</a>
+        <a href="productos.html">Productos</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.htmñ">Contacto</a>
+      </nav>
+
+      <nav>
+        <!--representa una sección de una página cuyo propósito es proporcionar enlaces de navegación-->
+        <a href="">Facebook</a>
+        <a href="">Instagram</a>
+      </nav>
+    </footer>
+  </body>
+</html>
